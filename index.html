@@ -1,24 +1,98 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FoodCoop 1040</title>
+    <title>VORRATSKAMMER - FoodCoop 1040 Wien</title>
+    <style type="text/css">
+    body {
+      background-color: #cfc;
+      font-family: sans-serif;
+      padding: 40px;
+    }
+
+    #head {
+      position: absolute;
+      border: 1px #ccc solid;
+      left: 80px;
+      top: 50px;
+      -webkit-transform: rotate(-4deg);
+      -moz-transform: rotate(-4deg);
+      transform: rotate(-4deg);
+      width: 400px;
+      padding: 20px 30px 20px 30px;
+      margin: 0 auto;
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    }
+
+    #head h1 {
+      color: darkgreen;
+      margin: 0;
+      -webkit-text-shadow: 8px 4px 4px #cdc;
+      -moz-text-shadow: 8px 4px 4px #cdc;
+      text-shadow: 8px 4px 4px #cdc;
+    }
+
+    #head h2 {
+      color: darkgray;
+      margin: 0;
+    }
+
+    #main {
+      border: 1px #999 solid;
+      margin-top:40px;
+      padding: 40px;
+      padding-top:100px;
+      display: block;
+      min-width: 500px;
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav {
+      position: absolute;
+      right: 90px;
+      top: 110px;
+    }
+    </style>
+    <script type="text/javascript">
+    function loaded() {
+      var a = document.querySelectorAll ? document.querySelectorAll(".mail") : [];
+      for (var i = 0; i < a.length; ++i)
+        a[i].href = "mailto:" + (a[i].innerHTML = a[i].innerHTML.replace(" [\u00E4t] ", "@").replace(" [punkt] ", "."));
+    }
+    </script>
   </head>
-  <body>
-    <h1>FoodCoop 1040</h1>
-    <h2>Infoabend</h2>
-    <p>
-      F&uuml;r Interessenten und Neu-Mitglieder findet am 2.3.2015 um 19:00 Uhr in der Zukunftshandlung (Wiedner Hauptstra&szlig;e 54, 1040 Wien) ein Infoabend statt.
-    <h2>Kontakt</h2>
-    <p>
-      <strong>Vereinsname:</strong> &quot;VORRATSKAMMER&quot; - Verein zur F&ouml;rderung von biologischer Landwirtschaft und regionalen Netzwerken<br>
-      <strong>ZVR-Zahl:</strong> 955824076<br>
-      <strong>Lager-Adresse:</strong> Sch&ouml;nburgstra&szlig;e 16, 1040 Wien<br>
-      <strong>Lagerdienstzeiten:</strong> jeden Dienstag von 18:30 bis 19:30<br>
-      <strong>E-Mail:</strong> info [&auml;t] foodcoop1040 [punkt] at<br>
-      <strong>IBAN:</strong> AT65 1420 0200 1095 1039
-    <h2>Links</h2>
-    <p>
-      <a href="http://foodcoops.at/">foodcoops</a><br>
-      <a href="https://intern.foodcoop1040.at/">interner Bereich</a><br>
+  <body onload="loaded()">
+    <header>
+      <div id="head">
+        <h1>VORRATSKAMMER</h1>
+        <h2>Foodcoop 1040 Wien</h2>
+      </div>
+      <nav id="nav">
+        <a href="https://intern.foodcoop1040.at/">interner Bereich</a>
+      </nav>
+    </header>
+    <div id="main">
+      <h1>Willkommen</h1>
+      <p>
+        Wir sind die erste Foodcoop auf der Wieden.
+        N&auml;here Information &uuml;ber Foodcoops allgemein findest du unter <a href="http://foodcoops.at">foodcoops.at</a>.
+        Falls du Fragen zu unserer Foodcoop hast oder mitmachen m&ouml;chtest, w&uuml;rden wir uns &uuml;ber ein E-Mail an <a class="mail">info [&auml;t] foodcoop1040 [punkt] at</a> freuen.
+      <h2>Infoabend</h2>
+      <p>
+        F&uuml;r Interessenten und Neu-Mitglieder findet am 2.3.2015 um 19:00 Uhr in der <a href="http://la21wien.at/die-la-21-bezirke/4-bezirk/zukunftscafe">Zukunftshandlung</a> (<a href="http://www.wien.gv.at/stadtplan/grafik.aspx?lang=de-AT&bookmark=oUFiRqotC0bdS3pEvEoERO5Rphlnqnnkur2pH4Oprw-b-b&bmadr=10204450">Wiedner Hauptstra&szlig;e 60B, 1040 Wien</a>) ein Infoabend statt.
+      <h2>Kontakt</h2>
+      <p>
+        <strong>Vereinsname:</strong> &quot;VORRATSKAMMER&quot; - Verein zur F&ouml;rderung von biologischer Landwirtschaft und regionalen Netzwerken<br>
+        <strong>ZVR-Zahl:</strong> 955824076<br>
+        <strong>Lager-Adresse:</strong> <a href="http://www.wien.gv.at/stadtplan/grafik.aspx?lang=de-AT&bookmark=oZFjRqpBCEbdS3pEvEoERO5Rphlnqnnkur2pH4Oprw-b-b&bmadr=10064351">Sch&ouml;nburgstra&szlig;e 16, 1040 Wien</a><br>
+        <strong>Lagerdienstzeiten:</strong> jeden Dienstag von 18:30 bis 19:30<br>
+        <strong>E-Mail:</strong> <a class="mail">info [&auml;t] foodcoop1040 [punkt] at</a><br>
+        <strong>IBAN:</strong> AT65 1420 0200 1095 1039
+    </div>
   </body>
 </html>
