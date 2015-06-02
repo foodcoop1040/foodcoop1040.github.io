@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif;
+  padding: 40px;
+  background-color: #fff;
+  background-image:
+  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+  linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+}
+
+h3 {
+  margin-bottom: 0px;
+}
+
+main {
+  text-align: center;
+}
+
+main .mail {
+  font-weight: bold;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  top: 130px;
+}
+
+nav a, nav li {
+  color: #6A0888;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover,  nav li:hover {
+  color: #f0f;
+}
+
+nav ul {
+  position: absolute;
+}
+
+#head {
+  background: url(/logo.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 210px;
+  width: 100%;
+  text-align: center;
+}
+
+#head h1 {
+  background: url(/vorratskammer.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 45px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#head h2 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 0.3em;
+}
+
+#head h2 .y {
+  font-weight: bold;
+}
+
+#head h2 .n {
+  display: none;
+}
+
+#head p {
+  margin: 0px;
+}
+
+#home {
+  left: 330px;
+  position: absolute;
+  transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+
+#impressum {
+  left: 300px;
+  position: absolute;
+  top: 40px;
+  transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+}
+
+#mitgliederberich {
+  left: 270px;
+  position: absolute;
+  top: 80px;
+  transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+}
